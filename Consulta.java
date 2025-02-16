@@ -1,8 +1,11 @@
 public class Consulta {
    int idConsulta;
+   int idPaciente;
+   int idMedico;
    Date dataConsulta;
    int horario;
    String statusConsulta;
+
 
    public Consulta(){
        this.idConsulta = 0;
