@@ -1,4 +1,5 @@
 public class Medico {
+    int idMedico;
   String nome;
   int idade;
   int CPF;
@@ -6,13 +7,22 @@ public class Medico {
   String endereco;
   int telefone;
 
-    public Medico(String nome, int idade, int CPF, boolean sexo, String endereco, int telefone) {
+    public Medico(int idMedico, String nome, int idade, int CPF, boolean sexo, String endereco, int telefone) {
+        this.idMedico = idMedico;
         this.nome = nome;
         this.idade = idade;
         this.CPF = CPF;
         this.sexo = sexo;
         this.endereco = endereco;
         this.telefone = telefone;
+    }
+
+    public int getIdMedico() {
+        return idMedico;
+    }
+
+    public void setIdMedico(int idMedico) {
+        this.idMedico = idMedico;
     }
 
     public String getNome() {
