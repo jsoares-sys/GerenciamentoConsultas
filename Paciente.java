@@ -1,6 +1,7 @@
 public class Paciente {
 
-    int idPaciente;
+    autoinc idPaciente;
+    int
     String nome;
     int CPF;
     int idade;
@@ -16,7 +17,7 @@ public class Paciente {
         this.idade = idade;
         this.sexo = sexo;
         this.endereco = endereco;
-        this.telefone = telefone;
+        this.telefone = telefone;-
     }
 
     public int getIdPaciente() {
