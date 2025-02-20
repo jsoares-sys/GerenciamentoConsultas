@@ -1,7 +1,5 @@
 public class Paciente {
-
-    autoinc idPaciente;
-    int
+    int idPaciente;
     String nome;
     int CPF;
     int idade;
@@ -76,4 +74,27 @@ public class Paciente {
         this.telefone = telefone;
     }
 
+    public void adicionarPaciente(Paciente paciente){
+        paciente.add(paciente);
+    }
+public void adicionarPaciente() {
+    System.out.print("Digite seu nome: ");
+    String nome = scanner.nextLine();
+
+    System.out.print("Digite seu CPF: ");
+    int CPF = scanner.nextInt();
+
+    System.out.print("Digite sua idade: ");
+    int idade = scanner.nextInt();
+
+    System.out.print("Digite seu sexo (true para masculino, false para feminino): ");
+    boolean sexo = scanner.nextBoolean();
+
+    scanner.nextLine(); // Consumir a nova linha deixada pelo nextBoolean()
+
+    System.out.print("Digite seu endereço: ");
+    String endereco = scanner.nextLine();
+
+    System.out.print("Digite seu telefone: ");
+    int telefone = scanner.nextInt();
 }
